@@ -1,0 +1,15 @@
+# NHIS Project 8 - Streamlit app (job_market_app.py)
+# DEPLOYMENT environment: deliberately slim. The app loads precomputed aggregate tables,
+# the deduplicated title index and the saved retriever - no training happens here, so
+# TensorFlow, statsmodels, LightGBM, seaborn and the notebook stack are left out.
+# Pins verified to resolve with binary wheels on Python 3.13.
+
+numpy==2.2.4
+pandas==2.2.3
+scipy==1.15.0
+scikit-learn==1.6.1
+rank-bm25==0.2.2
+plotly==5.24.1
+duckdb==1.4.5
+joblib==1.4.2
+streamlit==1.41.1

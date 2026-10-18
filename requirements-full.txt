@@ -1,0 +1,48 @@
+# NHIS Project 8 - Job Market Analysis and Recommendation System
+# FULL environment: everything the notebook uses (reference / local reproduction).
+# In Colab do NOT install this file: Colab already ships most of these, and
+# re-pinning numpy/pandas mid-session can crash the runtime. The notebook's first
+# cell installs only what Colab lacks (duckdb, rank-bm25).
+# Pins verified to resolve with binary wheels on Python 3.13.
+
+# === Core data handling ===
+numpy==2.2.4
+pandas==2.2.3
+
+# === Visualization ===
+matplotlib==3.10.0
+seaborn==0.13.2
+plotly==5.24.1
+
+# === Statistics and time series (Mann-Whitney, Spearman, FDR, Holt-Winters, SARIMA) ===
+scipy==1.15.0
+statsmodels==0.14.5
+
+# === Machine learning (TF-IDF, K-Means, NMF, SVD, Ridge/ElasticNet, pipelines) ===
+scikit-learn==1.6.1
+lightgbm==4.5.0
+
+# === Deep learning (small LSTM/GRU tier for the forecasting comparison) ===
+tensorflow==2.20.0
+
+# === Text: preprocessing and BM25 retrieval ===
+nltk==3.9.1
+rank-bm25==0.2.2
+
+# === SQL layer (in-process, no server) ===
+duckdb==1.4.5
+
+# === Country names -> ISO-3 codes for the choropleth map ===
+pycountry==24.6.1
+
+# === Serialization ===
+joblib==1.4.2
+
+# === Notebook environment ===
+jupyter==1.1.1
+notebook==7.3.2
+ipykernel==6.29.5
+ipython==8.31.0
+
+# === Deployment ===
+streamlit==1.41.1
