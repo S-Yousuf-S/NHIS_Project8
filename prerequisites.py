@@ -364,6 +364,13 @@ def load_upwork_jobs(
         source = "github"
         logger.debug(f"[{dataset_name}] Cached local copy: {local_path}")
 
+    # Independent record count taken from the file itself: every posting contains exactly one
+    # link anchor, and counting it on the whole text does not depend on how lines are split.
+    if expected_rows is None:
+        with open(local_path, encoding="utf-8", errors="replace") as handle:
+            expected_rows = handle.read().count(UPWORK_LINK_MARKER)
+        logger.info(f"[{dataset_name}] Independent link-anchor count: {expected_rows}")
+
     with open(local_path, encoding="utf-8", errors="replace") as handle:
         df, report = parse_upwork_lines(handle, expected_rows=expected_rows, dataset_name=dataset_name)
 
