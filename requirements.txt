@@ -8,7 +8,6 @@ numpy==2.2.4
 pandas==2.2.3
 scipy==1.15.0
 scikit-learn==1.6.1
-rank-bm25==0.2.2
 plotly==5.24.1
 duckdb==1.4.5
 joblib==1.4.2

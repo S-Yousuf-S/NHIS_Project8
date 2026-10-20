@@ -27,7 +27,6 @@ tensorflow==2.20.0
 
 # === Text: preprocessing and BM25 retrieval ===
 nltk==3.9.1
-rank-bm25==0.2.2
 
 # === SQL layer (in-process, no server) ===
 duckdb==1.4.5
