@@ -64,11 +64,10 @@ DRIVE_MODELS_DIR = os.path.join(DRIVE_ASSETS_DIR, "models")
 RAW_DATA_FILENAME = "all_upwork_jobs.csv"
 
 # =========================================================
-# COLOR THEME - teal family with an amber accent (no blue / indigo)
+# COLOR THEME - teal family with an amber accent
 #
-# Bright green / red are for borders, fills and chart marks. Their *_TEXT
-# variants are used for text so labels stay readable on light backgrounds.
-# Amber is never used as a fill under white text (about 2.2:1 contrast).
+# Status colours (success / warning / info) are fixed semantic colours, the same in
+# every project. Amber is never used as a fill under white text (about 2.2:1 contrast).
 # =========================================================
 PRIMARY_COLOR = "#008080"        # teal - section header background (white text, 4.8:1)
 SECONDARY_COLOR = "#E0F2F1"      # pale teal - subsection background
@@ -224,6 +223,7 @@ def _find_record_anchor(line):
     hits = [i for i in (line.find(UPWORK_LINK_MARKER), line.find(UPWORK_EMPTY_LINK_MARKER)) if i != -1]
     return min(hits) if hits else -1
 
+
 UPWORK_COLUMNS = [
     "title", "link", "published_date", "is_hourly",
     "hourly_low", "hourly_high", "budget", "country",
@@ -240,8 +240,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
     lines : iterable of str
         Physical lines of the file, header first.
     expected_rows : int | None
-        Optional record count to reconcile against (supplied by the notebook,
-        never hard-coded here).
+        Optional record count to reconcile against (load_upwork_jobs derives it from the file).
 
     Returns
     -------
@@ -374,9 +373,10 @@ def load_upwork_jobs(
         urllib.request.urlretrieve(github_url, local_path)
         source = "github"
         logger.debug(f"[{dataset_name}] Cached local copy: {local_path}")
-
+    
     # Independent record count taken from the file itself: every posting contains exactly one
-    # record count, and counting it on the whole text does not depend on how lines are split.
+    # timestamp + is_hourly sequence, and counting it on the whole text does not depend on how lines are split.
+    
     if expected_rows is None:
         with open(local_path, encoding="utf-8", errors="replace") as handle:
             expected_rows = len(UPWORK_RECORD_TAIL.findall(handle.read()))
