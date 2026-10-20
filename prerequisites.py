@@ -31,6 +31,7 @@
 """
 
 import os
+import re
 import glob
 import json
 import shutil
@@ -213,6 +214,16 @@ def set_global_visualization_settings(palette=None):
 # fields are split from the right-hand side.
 # =========================================================
 UPWORK_LINK_MARKER = '","https://www.upwork.com/'
+UPWORK_EMPTY_LINK_MARKER = '","","'     # posting whose link field is empty
+# Every posting carries exactly one "timestamp + is_hourly flag" sequence, whatever its title or link look like
+UPWORK_RECORD_TAIL = re.compile(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}"?,(?:TRUE|FALSE|True|False),')
+
+
+def _find_record_anchor(line):
+    """Index where the title ends and the link field starts (earliest of the two markers), or -1."""
+    hits = [i for i in (line.find(UPWORK_LINK_MARKER), line.find(UPWORK_EMPTY_LINK_MARKER)) if i != -1]
+    return min(hits) if hits else -1
+
 UPWORK_COLUMNS = [
     "title", "link", "published_date", "is_hourly",
     "hourly_low", "hourly_high", "budget", "country",
@@ -256,7 +267,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
             blank_lines += 1
             continue
 
-        anchor = line.find(UPWORK_LINK_MARKER)
+        anchor = _find_record_anchor(line)
         if anchor == -1:                       # title continues on the next line
             pending.append(line)
             logger.debug(f"[{dataset_name}] Line {line_no}: title continues (no link anchor)")
@@ -365,11 +376,11 @@ def load_upwork_jobs(
         logger.debug(f"[{dataset_name}] Cached local copy: {local_path}")
 
     # Independent record count taken from the file itself: every posting contains exactly one
-    # link anchor, and counting it on the whole text does not depend on how lines are split.
+    # record count, and counting it on the whole text does not depend on how lines are split.
     if expected_rows is None:
         with open(local_path, encoding="utf-8", errors="replace") as handle:
-            expected_rows = handle.read().count(UPWORK_LINK_MARKER)
-        logger.info(f"[{dataset_name}] Independent link-anchor count: {expected_rows}")
+            expected_rows = len(UPWORK_RECORD_TAIL.findall(handle.read()))
+        logger.info(f"[{dataset_name}] Independent record count: {expected_rows}")
 
     with open(local_path, encoding="utf-8", errors="replace") as handle:
         df, report = parse_upwork_lines(handle, expected_rows=expected_rows, dataset_name=dataset_name)
@@ -389,8 +400,8 @@ def show_load_report(report):
         ("Titles with replacement character", f"{report['titles_with_replacement_char']:,}"),
         ("Unmapped is_hourly values", f"{report['unmapped_is_hourly']:,}"),
         ("Numeric coercion failures", ", ".join(f"{k}: {v}" for k, v in report["numeric_coercion_failures"].items())),
-        ("Link-anchor count check", report["row_check"] if report["expected_rows"] is None else
-            f"{report['row_check']} (parsed {report['records_parsed']:,} vs {report['expected_rows']:,} anchors counted in the file)"),
+        ("Record count check", report["row_check"] if report["expected_rows"] is None else
+            f"{report['row_check']} (parsed {report['records_parsed']:,} vs {report['expected_rows']:,} records counted in the file)")
     ]
     centered_table(pd.DataFrame(rows, columns=["check", "result"]))
 
@@ -400,7 +411,7 @@ def show_load_report(report):
     )
     if report["row_check"] == "mismatch" or problems:
         warning_box(
-            f"Load finished with {problems} unparsed or unconverted values and a link-anchor count check of "
+            f"Load finished with {problems} unparsed or unconverted values and a record count check of "
             f"'{report['row_check']}'. Inspect bad_line_examples before cleaning."
         )
     else:
