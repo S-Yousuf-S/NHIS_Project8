@@ -74,15 +74,15 @@ SECONDARY_COLOR = "#E0F2F1"      # pale teal - subsection background
 TABLE_COLOR = "#006D6D"          # table header background (white text, 6.2:1)
 SUBSECTION_TEXT_COLOR = "#006D6D"
 PLOT_COLOR = "#134E4A"           # chart titles / text
-INFO_COLOR = "#0F766E"           # info box border and label
-INFO_BG = "#F0FDFA"
+INFO_COLOR = "#1F77B4"           # info box border and label (fixed semantic colour) 
+INFO_BG = "#F1F3F6"                                                                   
 ACCENT_COLOR = "#F59E0B"         # amber - highlights, winner bars, rules
-SUCCESS_COLOR = "#10B981"        # good - borders / fills / marks
-SUCCESS_TEXT = "#047857"
-SUCCESS_BG = "#ECFDF5"
-WARNING_COLOR = "#EF4444"        # bad - borders / marks
-WARNING_TEXT = "#B91C1C"
-WARNING_BG = "#FEF2F2"
+SUCCESS_COLOR = "#2E8B57"        # fixed semantic colour - borders / label / good marks 
+SUCCESS_TEXT = "#2E8B57"                                                              
+SUCCESS_BG = "#EAF7EA"                                                                 
+WARNING_COLOR = "#C0392B"        # fixed semantic colour - borders / label / bad marks  
+WARNING_TEXT = "#C0392B"                                                             
+WARNING_BG = "#FDEDEC"                                              
 NEUTRAL_COLOR = "#78716C"        # warm grey - third categorical colour, gridlines
 
 # Categorical order: teal, amber, warm grey, deep teal. Beyond four series use
@@ -242,7 +242,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
 
     iterator = iter(lines)
     header = next(iterator, "")
-    if not header.lower().startswith("title"):
+    if not header.lstrip('\ufeff"').lower().startswith("title"):
         logger.warning(f"[{dataset_name}] First line does not look like a header: {header[:80]!r}")
 
     rows, bad_lines, pending = [], [], []
@@ -381,7 +381,6 @@ def load_upwork_jobs(
 def show_load_report(report):
     """Render the load report with the project's HTML helpers (no raw print)."""
     rows = [
-        ("Source tier", report["source"]),
         ("Data lines read", f"{report['data_lines_read']:,}"),
         ("Records parsed", f"{report['records_parsed']:,}"),
         ("Titles joined across lines", f"{report['titles_joined_across_lines']:,}"),
@@ -390,7 +389,8 @@ def show_load_report(report):
         ("Titles with replacement character", f"{report['titles_with_replacement_char']:,}"),
         ("Unmapped is_hourly values", f"{report['unmapped_is_hourly']:,}"),
         ("Numeric coercion failures", ", ".join(f"{k}: {v}" for k, v in report["numeric_coercion_failures"].items())),
-        ("Row-count check", report["row_check"]),
+        ("Link-anchor count check", report["row_check"] if report["expected_rows"] is None else
+            f"{report['row_check']} (parsed {report['records_parsed']:,} vs {report['expected_rows']:,} anchors counted in the file)"),
     ]
     centered_table(pd.DataFrame(rows, columns=["check", "result"]))
 
@@ -400,11 +400,11 @@ def show_load_report(report):
     )
     if report["row_check"] == "mismatch" or problems:
         warning_box(
-            f"Load finished with {problems} unparsed or unconverted values and a row-count check of "
+            f"Load finished with {problems} unparsed or unconverted values and a link-anchor count check of "
             f"'{report['row_check']}'. Inspect bad_line_examples before cleaning."
         )
     else:
-        success_box(f"All {report['records_parsed']:,} records parsed cleanly from the {report['source']} tier.")
+        success_box(f"All {report['records_parsed']:,} records parsed cleanly.")
 
 
 # =========================================================
