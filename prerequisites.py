@@ -73,7 +73,7 @@ PRIMARY_COLOR = "#008080"        # teal - section header background (white text,
 SECONDARY_COLOR = "#E0F2F1"      # pale teal - subsection background
 TABLE_COLOR = "#006D6D"          # table header background (white text, 6.2:1)
 SUBSECTION_TEXT_COLOR = "#006D6D"
-PLOT_COLOR = "#134E4A"           # chart titles / text
+PLOT_COLOR = "midnightblue"        # chart titles / text
 INFO_COLOR = "#1F77B4"           # info box border and label (fixed semantic colour) 
 INFO_BG = "#F1F3F6"                                                                   
 ACCENT_COLOR = "#F59E0B"         # amber - highlights, winner bars, rules
@@ -198,7 +198,7 @@ def set_global_visualization_settings(palette=None):
     plt.rcParams["axes.titleweight"] = "bold"
     plt.rcParams["axes.titlecolor"] = PLOT_COLOR
     plt.rcParams["axes.labelsize"] = 12
-    plt.rcParams["axes.labelcolor"] = PLOT_COLOR
+    plt.rcParams["axes.labelcolor"] = "#262626" 
     plt.rcParams["grid.color"] = "#E7E5E4"
 
 
