@@ -198,7 +198,9 @@ def set_global_visualization_settings(palette=None):
     plt.rcParams["axes.titleweight"] = "bold"
     plt.rcParams["axes.titlecolor"] = PLOT_COLOR
     plt.rcParams["axes.labelsize"] = 12
-    plt.rcParams["grid.color"] = "#E7E5E4"
+    plt.rcParams["grid.color"] = "gray"
+    plt.rcParams["grid.linestyle"] = "--"
+    plt.rcParams["grid.alpha"] = 0.4
 
 
 # =========================================================
