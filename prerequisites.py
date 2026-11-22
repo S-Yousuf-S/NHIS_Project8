@@ -31,6 +31,7 @@
 """
 
 import os
+import re
 import glob
 import json
 import shutil
@@ -63,26 +64,25 @@ DRIVE_MODELS_DIR = os.path.join(DRIVE_ASSETS_DIR, "models")
 RAW_DATA_FILENAME = "all_upwork_jobs.csv"
 
 # =========================================================
-# COLOR THEME - teal family with an amber accent (no blue / indigo)
+# COLOR THEME - teal family with an amber accent
 #
-# Bright green / red are for borders, fills and chart marks. Their *_TEXT
-# variants are used for text so labels stay readable on light backgrounds.
-# Amber is never used as a fill under white text (about 2.2:1 contrast).
+# Status colours (success / warning / info) are fixed semantic colours, the same in
+# every project. Amber is never used as a fill under white text (about 2.2:1 contrast).
 # =========================================================
 PRIMARY_COLOR = "#008080"        # teal - section header background (white text, 4.8:1)
 SECONDARY_COLOR = "#E0F2F1"      # pale teal - subsection background
 TABLE_COLOR = "#006D6D"          # table header background (white text, 6.2:1)
 SUBSECTION_TEXT_COLOR = "#006D6D"
-PLOT_COLOR = "#134E4A"           # chart titles / text
-INFO_COLOR = "#0F766E"           # info box border and label
-INFO_BG = "#F0FDFA"
+PLOT_COLOR = "midnightblue"        # chart titles / text
+INFO_COLOR = "#1F77B4"           # info box border and label (fixed semantic colour) 
+INFO_BG = "#F1F3F6"                                                                   
 ACCENT_COLOR = "#F59E0B"         # amber - highlights, winner bars, rules
-SUCCESS_COLOR = "#10B981"        # good - borders / fills / marks
-SUCCESS_TEXT = "#047857"
-SUCCESS_BG = "#ECFDF5"
-WARNING_COLOR = "#EF4444"        # bad - borders / marks
-WARNING_TEXT = "#B91C1C"
-WARNING_BG = "#FEF2F2"
+SUCCESS_COLOR = "#2E8B57"        # fixed semantic colour - borders / label / good marks 
+SUCCESS_TEXT = "#2E8B57"                                                              
+SUCCESS_BG = "#EAF7EA"                                                                 
+WARNING_COLOR = "#C0392B"        # fixed semantic colour - borders / label / bad marks  
+WARNING_TEXT = "#C0392B"                                                             
+WARNING_BG = "#FDEDEC"                                              
 NEUTRAL_COLOR = "#78716C"        # warm grey - third categorical colour, gridlines
 
 # Categorical order: teal, amber, warm grey, deep teal. Beyond four series use
@@ -198,8 +198,9 @@ def set_global_visualization_settings(palette=None):
     plt.rcParams["axes.titleweight"] = "bold"
     plt.rcParams["axes.titlecolor"] = PLOT_COLOR
     plt.rcParams["axes.labelsize"] = 12
-    plt.rcParams["axes.labelcolor"] = PLOT_COLOR
-    plt.rcParams["grid.color"] = "#E7E5E4"
+    plt.rcParams["grid.color"] = "gray"
+    plt.rcParams["grid.linestyle"] = "--"
+    plt.rcParams["grid.alpha"] = 0.4
 
 
 # =========================================================
@@ -213,6 +214,17 @@ def set_global_visualization_settings(palette=None):
 # fields are split from the right-hand side.
 # =========================================================
 UPWORK_LINK_MARKER = '","https://www.upwork.com/'
+UPWORK_EMPTY_LINK_MARKER = '","","'     # posting whose link field is empty
+# Every posting carries exactly one "timestamp + is_hourly flag" sequence, whatever its title or link look like
+UPWORK_RECORD_TAIL = re.compile(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}"?,(?:TRUE|FALSE|True|False),')
+
+
+def _find_record_anchor(line):
+    """Index where the title ends and the link field starts (earliest of the two markers), or -1."""
+    hits = [i for i in (line.find(UPWORK_LINK_MARKER), line.find(UPWORK_EMPTY_LINK_MARKER)) if i != -1]
+    return min(hits) if hits else -1
+
+
 UPWORK_COLUMNS = [
     "title", "link", "published_date", "is_hourly",
     "hourly_low", "hourly_high", "budget", "country",
@@ -229,8 +241,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
     lines : iterable of str
         Physical lines of the file, header first.
     expected_rows : int | None
-        Optional record count to reconcile against (supplied by the notebook,
-        never hard-coded here).
+        Optional record count to reconcile against (load_upwork_jobs derives it from the file).
 
     Returns
     -------
@@ -242,7 +253,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
 
     iterator = iter(lines)
     header = next(iterator, "")
-    if not header.lower().startswith("title"):
+    if not header.lstrip('\ufeff"').lower().startswith("title"):
         logger.warning(f"[{dataset_name}] First line does not look like a header: {header[:80]!r}")
 
     rows, bad_lines, pending = [], [], []
@@ -256,7 +267,7 @@ def parse_upwork_lines(lines, expected_rows=None, dataset_name="upwork_jobs"):
             blank_lines += 1
             continue
 
-        anchor = line.find(UPWORK_LINK_MARKER)
+        anchor = _find_record_anchor(line)
         if anchor == -1:                       # title continues on the next line
             pending.append(line)
             logger.debug(f"[{dataset_name}] Line {line_no}: title continues (no link anchor)")
@@ -363,6 +374,14 @@ def load_upwork_jobs(
         urllib.request.urlretrieve(github_url, local_path)
         source = "github"
         logger.debug(f"[{dataset_name}] Cached local copy: {local_path}")
+    
+    # Independent record count taken from the file itself: every posting contains exactly one
+    # timestamp + is_hourly sequence, and counting it on the whole text does not depend on how lines are split.
+    
+    if expected_rows is None:
+        with open(local_path, encoding="utf-8", errors="replace") as handle:
+            expected_rows = len(UPWORK_RECORD_TAIL.findall(handle.read()))
+        logger.info(f"[{dataset_name}] Independent record count: {expected_rows}")
 
     with open(local_path, encoding="utf-8", errors="replace") as handle:
         df, report = parse_upwork_lines(handle, expected_rows=expected_rows, dataset_name=dataset_name)
@@ -374,7 +393,6 @@ def load_upwork_jobs(
 def show_load_report(report):
     """Render the load report with the project's HTML helpers (no raw print)."""
     rows = [
-        ("Source tier", report["source"]),
         ("Data lines read", f"{report['data_lines_read']:,}"),
         ("Records parsed", f"{report['records_parsed']:,}"),
         ("Titles joined across lines", f"{report['titles_joined_across_lines']:,}"),
@@ -383,7 +401,8 @@ def show_load_report(report):
         ("Titles with replacement character", f"{report['titles_with_replacement_char']:,}"),
         ("Unmapped is_hourly values", f"{report['unmapped_is_hourly']:,}"),
         ("Numeric coercion failures", ", ".join(f"{k}: {v}" for k, v in report["numeric_coercion_failures"].items())),
-        ("Row-count check", report["row_check"]),
+        ("Record count check", report["row_check"] if report["expected_rows"] is None else
+            f"{report['row_check']} (parsed {report['records_parsed']:,} vs {report['expected_rows']:,} records counted in the file)")
     ]
     centered_table(pd.DataFrame(rows, columns=["check", "result"]))
 
@@ -393,11 +412,11 @@ def show_load_report(report):
     )
     if report["row_check"] == "mismatch" or problems:
         warning_box(
-            f"Load finished with {problems} unparsed or unconverted values and a row-count check of "
+            f"Load finished with {problems} unparsed or unconverted values and a record count check of "
             f"'{report['row_check']}'. Inspect bad_line_examples before cleaning."
         )
     else:
-        success_box(f"All {report['records_parsed']:,} records parsed cleanly from the {report['source']} tier.")
+        success_box(f"All {report['records_parsed']:,} records parsed cleanly.")
 
 
 # =========================================================
