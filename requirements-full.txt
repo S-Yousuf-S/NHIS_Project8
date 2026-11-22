@@ -27,6 +27,12 @@ tensorflow==2.20.0
 
 # === Text: preprocessing and BM25 retrieval ===
 nltk==3.9.1
+<<<<<<< HEAD
+=======
+
+# === SQL layer (in-process, no server) ===
+duckdb==1.4.5
+>>>>>>> 8cd349103897309d2e0d7827600a64cc08ad8000
 
 # === Country names -> ISO-3 codes for the choropleth map ===
 pycountry==24.6.1
