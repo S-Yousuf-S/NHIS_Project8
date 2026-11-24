@@ -1,0 +1,437 @@
+2026-11-22 18:03:21,812 - job_market_analysis - INFO - Logging initialized -> logs/YS_job_market_analysis_2026-11-22.log
+2026-11-22 18:03:43,824 - job_market_analysis - INFO - Environment initialized — libraries imported, logging and visualization defaults set
+2026-11-22 18:03:47,525 - job_market_analysis - WARNING - Google Drive mount failed: Error: credential propagation was unsuccessful
+2026-11-22 18:03:47,535 - job_market_analysis - INFO - Cascade configured — Drive available: False
+2026-11-22 18:03:47,561 - job_market_analysis - INFO - [upwork_jobs] Falling back to GitHub: https://raw.githubusercontent.com/S-Yousuf-S/NHIS_Project8/main/Assets/all_upwork_jobs.csv
+2026-11-22 18:03:49,041 - job_market_analysis - DEBUG - [upwork_jobs] Cached local copy: Assets/all_upwork_jobs.csv
+2026-11-22 18:03:53,361 - job_market_analysis - INFO - [upwork_jobs] Independent record count: 244828
+2026-11-22 18:03:53,372 - job_market_analysis - DEBUG - [upwork_jobs] Line 936: title continues (no link anchor)
+2026-11-22 18:03:53,380 - job_market_analysis - DEBUG - [upwork_jobs] Line 1506: title continues (no link anchor)
+2026-11-22 18:03:53,384 - job_market_analysis - DEBUG - [upwork_jobs] Line 1594: title continues (no link anchor)
+2026-11-22 18:03:53,402 - job_market_analysis - DEBUG - [upwork_jobs] Line 3285: title continues (no link anchor)
+2026-11-22 18:03:53,414 - job_market_analysis - DEBUG - [upwork_jobs] Line 4132: title continues (no link anchor)
+2026-11-22 18:03:53,418 - job_market_analysis - DEBUG - [upwork_jobs] Line 4187: title continues (no link anchor)
+2026-11-22 18:03:53,427 - job_market_analysis - DEBUG - [upwork_jobs] Line 4538: title continues (no link anchor)
+2026-11-22 18:03:53,430 - job_market_analysis - DEBUG - [upwork_jobs] Line 4754: title continues (no link anchor)
+2026-11-22 18:03:53,461 - job_market_analysis - DEBUG - [upwork_jobs] Line 7057: title continues (no link anchor)
+2026-11-22 18:03:53,462 - job_market_analysis - DEBUG - [upwork_jobs] Line 7058: title continues (no link anchor)
+2026-11-22 18:03:53,471 - job_market_analysis - DEBUG - [upwork_jobs] Line 7240: title continues (no link anchor)
+2026-11-22 18:03:53,477 - job_market_analysis - DEBUG - [upwork_jobs] Line 7514: title continues (no link anchor)
+2026-11-22 18:03:53,479 - job_market_analysis - DEBUG - [upwork_jobs] Line 7627: title continues (no link anchor)
+2026-11-22 18:03:53,481 - job_market_analysis - DEBUG - [upwork_jobs] Line 7712: title continues (no link anchor)
+2026-11-22 18:03:53,486 - job_market_analysis - DEBUG - [upwork_jobs] Line 7827: title continues (no link anchor)
+2026-11-22 18:03:53,496 - job_market_analysis - DEBUG - [upwork_jobs] Line 8424: title continues (no link anchor)
+2026-11-22 18:03:53,505 - job_market_analysis - DEBUG - [upwork_jobs] Line 9034: title continues (no link anchor)
+2026-11-22 18:03:53,519 - job_market_analysis - DEBUG - [upwork_jobs] Line 10338: title continues (no link anchor)
+2026-11-22 18:03:53,546 - job_market_analysis - DEBUG - [upwork_jobs] Line 13169: title continues (no link anchor)
+2026-11-22 18:03:53,552 - job_market_analysis - DEBUG - [upwork_jobs] Line 13392: title continues (no link anchor)
+2026-11-22 18:03:53,558 - job_market_analysis - DEBUG - [upwork_jobs] Line 13553: title continues (no link anchor)
+2026-11-22 18:03:53,575 - job_market_analysis - DEBUG - [upwork_jobs] Line 15279: title continues (no link anchor)
+2026-11-22 18:03:53,580 - job_market_analysis - DEBUG - [upwork_jobs] Line 15691: title continues (no link anchor)
+2026-11-22 18:03:53,588 - job_market_analysis - DEBUG - [upwork_jobs] Line 16135: title continues (no link anchor)
+2026-11-22 18:03:53,600 - job_market_analysis - DEBUG - [upwork_jobs] Line 16997: title continues (no link anchor)
+2026-11-22 18:03:53,606 - job_market_analysis - DEBUG - [upwork_jobs] Line 17614: title continues (no link anchor)
+2026-11-22 18:03:53,609 - job_market_analysis - DEBUG - [upwork_jobs] Line 17808: title continues (no link anchor)
+2026-11-22 18:03:53,616 - job_market_analysis - DEBUG - [upwork_jobs] Line 18332: title continues (no link anchor)
+2026-11-22 18:03:53,618 - job_market_analysis - DEBUG - [upwork_jobs] Line 18333: title continues (no link anchor)
+2026-11-22 18:03:53,630 - job_market_analysis - DEBUG - [upwork_jobs] Line 19169: title continues (no link anchor)
+2026-11-22 18:03:53,632 - job_market_analysis - DEBUG - [upwork_jobs] Line 19200: title continues (no link anchor)
+2026-11-22 18:03:53,632 - job_market_analysis - DEBUG - [upwork_jobs] Line 19201: title continues (no link anchor)
+2026-11-22 18:03:53,647 - job_market_analysis - DEBUG - [upwork_jobs] Line 20951: title continues (no link anchor)
+2026-11-22 18:03:53,656 - job_market_analysis - DEBUG - [upwork_jobs] Line 21719: title continues (no link anchor)
+2026-11-22 18:03:53,661 - job_market_analysis - DEBUG - [upwork_jobs] Line 22235: title continues (no link anchor)
+2026-11-22 18:03:53,664 - job_market_analysis - DEBUG - [upwork_jobs] Line 22431: title continues (no link anchor)
+2026-11-22 18:03:53,690 - job_market_analysis - DEBUG - [upwork_jobs] Line 25535: title continues (no link anchor)
+2026-11-22 18:03:53,697 - job_market_analysis - DEBUG - [upwork_jobs] Line 26288: title continues (no link anchor)
+2026-11-22 18:03:53,700 - job_market_analysis - DEBUG - [upwork_jobs] Line 26422: title continues (no link anchor)
+2026-11-22 18:03:53,725 - job_market_analysis - DEBUG - [upwork_jobs] Line 29332: title continues (no link anchor)
+2026-11-22 18:03:53,728 - job_market_analysis - DEBUG - [upwork_jobs] Line 29497: title continues (no link anchor)
+2026-11-22 18:03:53,743 - job_market_analysis - DEBUG - [upwork_jobs] Line 31213: title continues (no link anchor)
+2026-11-22 18:03:53,744 - job_market_analysis - DEBUG - [upwork_jobs] Line 31214: title continues (no link anchor)
+2026-11-22 18:03:53,753 - job_market_analysis - DEBUG - [upwork_jobs] Line 31770: title continues (no link anchor)
+2026-11-22 18:03:53,759 - job_market_analysis - DEBUG - [upwork_jobs] Line 32186: title continues (no link anchor)
+2026-11-22 18:03:53,762 - job_market_analysis - DEBUG - [upwork_jobs] Line 32312: title continues (no link anchor)
+2026-11-22 18:03:53,765 - job_market_analysis - DEBUG - [upwork_jobs] Line 32474: title continues (no link anchor)
+2026-11-22 18:03:53,773 - job_market_analysis - DEBUG - [upwork_jobs] Line 33089: title continues (no link anchor)
+2026-11-22 18:03:53,775 - job_market_analysis - DEBUG - [upwork_jobs] Line 33233: title continues (no link anchor)
+2026-11-22 18:03:53,783 - job_market_analysis - DEBUG - [upwork_jobs] Line 33442: title continues (no link anchor)
+2026-11-22 18:03:53,816 - job_market_analysis - DEBUG - [upwork_jobs] Line 35137: title continues (no link anchor)
+2026-11-22 18:03:53,831 - job_market_analysis - DEBUG - [upwork_jobs] Line 36237: title continues (no link anchor)
+2026-11-22 18:03:53,843 - job_market_analysis - DEBUG - [upwork_jobs] Line 37349: title continues (no link anchor)
+2026-11-22 18:03:53,849 - job_market_analysis - DEBUG - [upwork_jobs] Line 37715: title continues (no link anchor)
+2026-11-22 18:03:53,851 - job_market_analysis - DEBUG - [upwork_jobs] Line 37785: title continues (no link anchor)
+2026-11-22 18:03:53,871 - job_market_analysis - DEBUG - [upwork_jobs] Line 39799: title continues (no link anchor)
+2026-11-22 18:03:53,882 - job_market_analysis - DEBUG - [upwork_jobs] Line 40245: title continues (no link anchor)
+2026-11-22 18:03:53,884 - job_market_analysis - DEBUG - [upwork_jobs] Line 40246: title continues (no link anchor)
+2026-11-22 18:03:53,900 - job_market_analysis - DEBUG - [upwork_jobs] Line 40891: title continues (no link anchor)
+2026-11-22 18:03:53,907 - job_market_analysis - DEBUG - [upwork_jobs] Line 41447: title continues (no link anchor)
+2026-11-22 18:03:53,911 - job_market_analysis - DEBUG - [upwork_jobs] Line 41587: title continues (no link anchor)
+2026-11-22 18:03:53,915 - job_market_analysis - DEBUG - [upwork_jobs] Line 41799: title continues (no link anchor)
+2026-11-22 18:03:53,923 - job_market_analysis - DEBUG - [upwork_jobs] Line 42066: title continues (no link anchor)
+2026-11-22 18:03:53,931 - job_market_analysis - DEBUG - [upwork_jobs] Line 42301: title continues (no link anchor)
+2026-11-22 18:03:53,957 - job_market_analysis - DEBUG - [upwork_jobs] Line 43486: title continues (no link anchor)
+2026-11-22 18:03:53,962 - job_market_analysis - DEBUG - [upwork_jobs] Line 43579: title continues (no link anchor)
+2026-11-22 18:03:53,970 - job_market_analysis - DEBUG - [upwork_jobs] Line 43938: title continues (no link anchor)
+2026-11-22 18:03:53,982 - job_market_analysis - DEBUG - [upwork_jobs] Line 45116: title continues (no link anchor)
+2026-11-22 18:03:53,987 - job_market_analysis - DEBUG - [upwork_jobs] Line 45383: title continues (no link anchor)
+2026-11-22 18:03:53,991 - job_market_analysis - DEBUG - [upwork_jobs] Line 45615: title continues (no link anchor)
+2026-11-22 18:03:54,010 - job_market_analysis - DEBUG - [upwork_jobs] Line 47167: title continues (no link anchor)
+2026-11-22 18:03:54,013 - job_market_analysis - DEBUG - [upwork_jobs] Line 47358: title continues (no link anchor)
+2026-11-22 18:03:54,019 - job_market_analysis - DEBUG - [upwork_jobs] Line 47614: title continues (no link anchor)
+2026-11-22 18:03:54,026 - job_market_analysis - DEBUG - [upwork_jobs] Line 47959: title continues (no link anchor)
+2026-11-22 18:03:54,047 - job_market_analysis - DEBUG - [upwork_jobs] Line 49784: title continues (no link anchor)
+2026-11-22 18:03:54,064 - job_market_analysis - DEBUG - [upwork_jobs] Line 50538: title continues (no link anchor)
+2026-11-22 18:03:54,075 - job_market_analysis - DEBUG - [upwork_jobs] Line 51032: title continues (no link anchor)
+2026-11-22 18:03:54,091 - job_market_analysis - DEBUG - [upwork_jobs] Line 51462: title continues (no link anchor)
+2026-11-22 18:03:54,096 - job_market_analysis - DEBUG - [upwork_jobs] Line 51741: title continues (no link anchor)
+2026-11-22 18:03:54,103 - job_market_analysis - DEBUG - [upwork_jobs] Line 52202: title continues (no link anchor)
+2026-11-22 18:03:54,111 - job_market_analysis - DEBUG - [upwork_jobs] Line 52714: title continues (no link anchor)
+2026-11-22 18:03:54,116 - job_market_analysis - DEBUG - [upwork_jobs] Line 52735: title continues (no link anchor)
+2026-11-22 18:03:54,121 - job_market_analysis - DEBUG - [upwork_jobs] Line 52737: title continues (no link anchor)
+2026-11-22 18:03:54,162 - job_market_analysis - DEBUG - [upwork_jobs] Line 54483: title continues (no link anchor)
+2026-11-22 18:03:54,166 - job_market_analysis - DEBUG - [upwork_jobs] Line 54499: title continues (no link anchor)
+2026-11-22 18:03:54,167 - job_market_analysis - DEBUG - [upwork_jobs] Line 54511: title continues (no link anchor)
+2026-11-22 18:03:54,172 - job_market_analysis - DEBUG - [upwork_jobs] Line 54688: title continues (no link anchor)
+2026-11-22 18:03:54,177 - job_market_analysis - DEBUG - [upwork_jobs] Line 54689: title continues (no link anchor)
+2026-11-22 18:03:54,177 - job_market_analysis - DEBUG - [upwork_jobs] Line 54690: title continues (no link anchor)
+2026-11-22 18:03:54,179 - job_market_analysis - DEBUG - [upwork_jobs] Line 54691: title continues (no link anchor)
+2026-11-22 18:03:54,208 - job_market_analysis - DEBUG - [upwork_jobs] Line 56147: title continues (no link anchor)
+2026-11-22 18:03:54,209 - job_market_analysis - DEBUG - [upwork_jobs] Line 56156: title continues (no link anchor)
+2026-11-22 18:03:54,218 - job_market_analysis - DEBUG - [upwork_jobs] Line 56621: title continues (no link anchor)
+2026-11-22 18:03:54,238 - job_market_analysis - DEBUG - [upwork_jobs] Line 57569: title continues (no link anchor)
+2026-11-22 18:03:54,241 - job_market_analysis - DEBUG - [upwork_jobs] Line 57814: title continues (no link anchor)
+2026-11-22 18:03:54,250 - job_market_analysis - DEBUG - [upwork_jobs] Line 58019: title continues (no link anchor)
+2026-11-22 18:03:54,260 - job_market_analysis - DEBUG - [upwork_jobs] Line 58528: title continues (no link anchor)
+2026-11-22 18:03:54,264 - job_market_analysis - DEBUG - [upwork_jobs] Line 58596: title continues (no link anchor)
+2026-11-22 18:03:54,273 - job_market_analysis - DEBUG - [upwork_jobs] Line 58889: title continues (no link anchor)
+2026-11-22 18:03:54,274 - job_market_analysis - DEBUG - [upwork_jobs] Line 58939: title continues (no link anchor)
+2026-11-22 18:03:54,279 - job_market_analysis - DEBUG - [upwork_jobs] Line 59371: title continues (no link anchor)
+2026-11-22 18:03:54,281 - job_market_analysis - DEBUG - [upwork_jobs] Line 59386: title continues (no link anchor)
+2026-11-22 18:03:54,282 - job_market_analysis - DEBUG - [upwork_jobs] Line 59421: title continues (no link anchor)
+2026-11-22 18:03:54,283 - job_market_analysis - DEBUG - [upwork_jobs] Line 59422: title continues (no link anchor)
+2026-11-22 18:03:54,292 - job_market_analysis - DEBUG - [upwork_jobs] Line 60177: title continues (no link anchor)
+2026-11-22 18:03:54,294 - job_market_analysis - DEBUG - [upwork_jobs] Line 60295: title continues (no link anchor)
+2026-11-22 18:03:54,296 - job_market_analysis - DEBUG - [upwork_jobs] Line 60326: title continues (no link anchor)
+2026-11-22 18:03:54,299 - job_market_analysis - DEBUG - [upwork_jobs] Line 60606: title continues (no link anchor)
+2026-11-22 18:03:54,304 - job_market_analysis - DEBUG - [upwork_jobs] Line 60999: title continues (no link anchor)
+2026-11-22 18:03:54,311 - job_market_analysis - DEBUG - [upwork_jobs] Line 61601: title continues (no link anchor)
+2026-11-22 18:03:54,316 - job_market_analysis - DEBUG - [upwork_jobs] Line 61973: title continues (no link anchor)
+2026-11-22 18:03:54,319 - job_market_analysis - DEBUG - [upwork_jobs] Line 62093: title continues (no link anchor)
+2026-11-22 18:03:54,331 - job_market_analysis - DEBUG - [upwork_jobs] Line 63045: title continues (no link anchor)
+2026-11-22 18:03:54,334 - job_market_analysis - DEBUG - [upwork_jobs] Line 63166: title continues (no link anchor)
+2026-11-22 18:03:54,338 - job_market_analysis - DEBUG - [upwork_jobs] Line 63388: title continues (no link anchor)
+2026-11-22 18:03:54,341 - job_market_analysis - DEBUG - [upwork_jobs] Line 63524: title continues (no link anchor)
+2026-11-22 18:03:54,344 - job_market_analysis - DEBUG - [upwork_jobs] Line 63525: title continues (no link anchor)
+2026-11-22 18:03:54,345 - job_market_analysis - DEBUG - [upwork_jobs] Line 63526: title continues (no link anchor)
+2026-11-22 18:03:54,349 - job_market_analysis - DEBUG - [upwork_jobs] Line 63605: title continues (no link anchor)
+2026-11-22 18:03:54,355 - job_market_analysis - DEBUG - [upwork_jobs] Line 64054: title continues (no link anchor)
+2026-11-22 18:03:54,358 - job_market_analysis - DEBUG - [upwork_jobs] Line 64358: title continues (no link anchor)
+2026-11-22 18:03:54,364 - job_market_analysis - DEBUG - [upwork_jobs] Line 64907: title continues (no link anchor)
+2026-11-22 18:03:54,376 - job_market_analysis - DEBUG - [upwork_jobs] Line 65974: title continues (no link anchor)
+2026-11-22 18:03:54,380 - job_market_analysis - DEBUG - [upwork_jobs] Line 66226: title continues (no link anchor)
+2026-11-22 18:03:54,383 - job_market_analysis - DEBUG - [upwork_jobs] Line 66524: title continues (no link anchor)
+2026-11-22 18:03:54,391 - job_market_analysis - DEBUG - [upwork_jobs] Line 66967: title continues (no link anchor)
+2026-11-22 18:03:54,394 - job_market_analysis - DEBUG - [upwork_jobs] Line 67086: title continues (no link anchor)
+2026-11-22 18:03:54,403 - job_market_analysis - DEBUG - [upwork_jobs] Line 67775: title continues (no link anchor)
+2026-11-22 18:03:54,405 - job_market_analysis - DEBUG - [upwork_jobs] Line 67933: title continues (no link anchor)
+2026-11-22 18:03:54,410 - job_market_analysis - DEBUG - [upwork_jobs] Line 68306: title continues (no link anchor)
+2026-11-22 18:03:54,414 - job_market_analysis - DEBUG - [upwork_jobs] Line 68627: title continues (no link anchor)
+2026-11-22 18:03:54,417 - job_market_analysis - DEBUG - [upwork_jobs] Line 68874: title continues (no link anchor)
+2026-11-22 18:03:54,425 - job_market_analysis - DEBUG - [upwork_jobs] Line 69144: title continues (no link anchor)
+2026-11-22 18:03:54,427 - job_market_analysis - DEBUG - [upwork_jobs] Line 69222: title continues (no link anchor)
+2026-11-22 18:03:54,432 - job_market_analysis - DEBUG - [upwork_jobs] Line 69572: title continues (no link anchor)
+2026-11-22 18:03:54,439 - job_market_analysis - DEBUG - [upwork_jobs] Line 70182: title continues (no link anchor)
+2026-11-22 18:03:54,441 - job_market_analysis - DEBUG - [upwork_jobs] Line 70294: title continues (no link anchor)
+2026-11-22 18:03:54,443 - job_market_analysis - DEBUG - [upwork_jobs] Line 70295: title continues (no link anchor)
+2026-11-22 18:03:54,444 - job_market_analysis - DEBUG - [upwork_jobs] Line 70412: title continues (no link anchor)
+2026-11-22 18:03:54,446 - job_market_analysis - DEBUG - [upwork_jobs] Line 70413: title continues (no link anchor)
+2026-11-22 18:03:54,447 - job_market_analysis - DEBUG - [upwork_jobs] Line 70414: title continues (no link anchor)
+2026-11-22 18:03:54,452 - job_market_analysis - DEBUG - [upwork_jobs] Line 70943: title continues (no link anchor)
+2026-11-22 18:03:54,467 - job_market_analysis - DEBUG - [upwork_jobs] Line 71792: title continues (no link anchor)
+2026-11-22 18:03:54,504 - job_market_analysis - DEBUG - [upwork_jobs] Line 72702: title continues (no link anchor)
+2026-11-22 18:03:54,527 - job_market_analysis - DEBUG - [upwork_jobs] Line 73592: title continues (no link anchor)
+2026-11-22 18:03:54,546 - job_market_analysis - DEBUG - [upwork_jobs] Line 74255: title continues (no link anchor)
+2026-11-22 18:03:54,567 - job_market_analysis - DEBUG - [upwork_jobs] Line 75294: title continues (no link anchor)
+2026-11-22 18:03:54,575 - job_market_analysis - DEBUG - [upwork_jobs] Line 75535: title continues (no link anchor)
+2026-11-22 18:03:54,585 - job_market_analysis - DEBUG - [upwork_jobs] Line 76037: title continues (no link anchor)
+2026-11-22 18:03:54,590 - job_market_analysis - DEBUG - [upwork_jobs] Line 76193: title continues (no link anchor)
+2026-11-22 18:03:54,603 - job_market_analysis - DEBUG - [upwork_jobs] Line 76729: title continues (no link anchor)
+2026-11-22 18:03:54,608 - job_market_analysis - DEBUG - [upwork_jobs] Line 76807: title continues (no link anchor)
+2026-11-22 18:03:54,619 - job_market_analysis - DEBUG - [upwork_jobs] Line 77061: title continues (no link anchor)
+2026-11-22 18:03:54,636 - job_market_analysis - DEBUG - [upwork_jobs] Line 77917: title continues (no link anchor)
+2026-11-22 18:03:54,640 - job_market_analysis - DEBUG - [upwork_jobs] Line 78044: title continues (no link anchor)
+2026-11-22 18:03:54,643 - job_market_analysis - DEBUG - [upwork_jobs] Line 78077: title continues (no link anchor)
+2026-11-22 18:03:54,688 - job_market_analysis - DEBUG - [upwork_jobs] Line 81049: title continues (no link anchor)
+2026-11-22 18:03:54,693 - job_market_analysis - DEBUG - [upwork_jobs] Line 81566: title continues (no link anchor)
+2026-11-22 18:03:54,695 - job_market_analysis - DEBUG - [upwork_jobs] Line 81575: title continues (no link anchor)
+2026-11-22 18:03:54,697 - job_market_analysis - DEBUG - [upwork_jobs] Line 81576: title continues (no link anchor)
+2026-11-22 18:03:54,698 - job_market_analysis - DEBUG - [upwork_jobs] Line 81698: title continues (no link anchor)
+2026-11-22 18:03:54,724 - job_market_analysis - DEBUG - [upwork_jobs] Line 83875: title continues (no link anchor)
+2026-11-22 18:03:54,741 - job_market_analysis - DEBUG - [upwork_jobs] Line 84709: title continues (no link anchor)
+2026-11-22 18:03:54,745 - job_market_analysis - DEBUG - [upwork_jobs] Line 84938: title continues (no link anchor)
+2026-11-22 18:03:54,746 - job_market_analysis - DEBUG - [upwork_jobs] Line 84939: title continues (no link anchor)
+2026-11-22 18:03:54,749 - job_market_analysis - DEBUG - [upwork_jobs] Line 85052: title continues (no link anchor)
+2026-11-22 18:03:54,757 - job_market_analysis - DEBUG - [upwork_jobs] Line 85622: title continues (no link anchor)
+2026-11-22 18:03:54,757 - job_market_analysis - DEBUG - [upwork_jobs] Line 85623: title continues (no link anchor)
+2026-11-22 18:03:54,760 - job_market_analysis - DEBUG - [upwork_jobs] Line 85694: title continues (no link anchor)
+2026-11-22 18:03:54,766 - job_market_analysis - DEBUG - [upwork_jobs] Line 86181: title continues (no link anchor)
+2026-11-22 18:03:54,767 - job_market_analysis - DEBUG - [upwork_jobs] Line 86182: title continues (no link anchor)
+2026-11-22 18:03:54,770 - job_market_analysis - DEBUG - [upwork_jobs] Line 86265: title continues (no link anchor)
+2026-11-22 18:03:54,770 - job_market_analysis - DEBUG - [upwork_jobs] Line 86266: title continues (no link anchor)
+2026-11-22 18:03:54,778 - job_market_analysis - DEBUG - [upwork_jobs] Line 86695: title continues (no link anchor)
+2026-11-22 18:03:54,783 - job_market_analysis - DEBUG - [upwork_jobs] Line 87173: title continues (no link anchor)
+2026-11-22 18:03:54,784 - job_market_analysis - DEBUG - [upwork_jobs] Line 87174: title continues (no link anchor)
+2026-11-22 18:03:54,791 - job_market_analysis - DEBUG - [upwork_jobs] Line 87703: title continues (no link anchor)
+2026-11-22 18:03:54,825 - job_market_analysis - DEBUG - [upwork_jobs] Line 90712: title continues (no link anchor)
+2026-11-22 18:03:54,830 - job_market_analysis - DEBUG - [upwork_jobs] Line 90805: title continues (no link anchor)
+2026-11-22 18:03:54,880 - job_market_analysis - DEBUG - [upwork_jobs] Line 94410: title continues (no link anchor)
+2026-11-22 18:03:54,893 - job_market_analysis - DEBUG - [upwork_jobs] Line 95330: title continues (no link anchor)
+2026-11-22 18:03:54,898 - job_market_analysis - DEBUG - [upwork_jobs] Line 95744: title continues (no link anchor)
+2026-11-22 18:03:54,918 - job_market_analysis - DEBUG - [upwork_jobs] Line 96984: title continues (no link anchor)
+2026-11-22 18:03:54,922 - job_market_analysis - DEBUG - [upwork_jobs] Line 96985: title continues (no link anchor)
+2026-11-22 18:03:54,925 - job_market_analysis - DEBUG - [upwork_jobs] Line 97096: title continues (no link anchor)
+2026-11-22 18:03:54,962 - job_market_analysis - DEBUG - [upwork_jobs] Line 99044: title continues (no link anchor)
+2026-11-22 18:03:54,971 - job_market_analysis - DEBUG - [upwork_jobs] Line 99424: title continues (no link anchor)
+2026-11-22 18:03:55,017 - job_market_analysis - DEBUG - [upwork_jobs] Line 101456: title continues (no link anchor)
+2026-11-22 18:03:55,082 - job_market_analysis - DEBUG - [upwork_jobs] Line 104359: title continues (no link anchor)
+2026-11-22 18:03:55,103 - job_market_analysis - DEBUG - [upwork_jobs] Line 104978: title continues (no link anchor)
+2026-11-22 18:03:55,116 - job_market_analysis - DEBUG - [upwork_jobs] Line 105473: title continues (no link anchor)
+2026-11-22 18:03:55,137 - job_market_analysis - DEBUG - [upwork_jobs] Line 106151: title continues (no link anchor)
+2026-11-22 18:03:55,154 - job_market_analysis - DEBUG - [upwork_jobs] Line 107606: title continues (no link anchor)
+2026-11-22 18:03:55,174 - job_market_analysis - DEBUG - [upwork_jobs] Line 108073: title continues (no link anchor)
+2026-11-22 18:03:55,228 - job_market_analysis - DEBUG - [upwork_jobs] Line 109358: title continues (no link anchor)
+2026-11-22 18:03:55,255 - job_market_analysis - DEBUG - [upwork_jobs] Line 110369: title continues (no link anchor)
+2026-11-22 18:03:55,258 - job_market_analysis - DEBUG - [upwork_jobs] Line 110564: title continues (no link anchor)
+2026-11-22 18:03:55,276 - job_market_analysis - DEBUG - [upwork_jobs] Line 112489: title continues (no link anchor)
+2026-11-22 18:03:55,284 - job_market_analysis - DEBUG - [upwork_jobs] Line 113072: title continues (no link anchor)
+2026-11-22 18:03:55,300 - job_market_analysis - DEBUG - [upwork_jobs] Line 113706: title continues (no link anchor)
+2026-11-22 18:03:55,302 - job_market_analysis - DEBUG - [upwork_jobs] Line 113707: title continues (no link anchor)
+2026-11-22 18:03:55,303 - job_market_analysis - DEBUG - [upwork_jobs] Line 113711: title continues (no link anchor)
+2026-11-22 18:03:55,324 - job_market_analysis - DEBUG - [upwork_jobs] Line 116218: title continues (no link anchor)
+2026-11-22 18:03:55,328 - job_market_analysis - DEBUG - [upwork_jobs] Line 116318: title continues (no link anchor)
+2026-11-22 18:03:55,335 - job_market_analysis - DEBUG - [upwork_jobs] Line 116857: title continues (no link anchor)
+2026-11-22 18:03:55,360 - job_market_analysis - DEBUG - [upwork_jobs] Line 118626: title continues (no link anchor)
+2026-11-22 18:03:55,369 - job_market_analysis - DEBUG - [upwork_jobs] Line 118923: title continues (no link anchor)
+2026-11-22 18:03:55,398 - job_market_analysis - DEBUG - [upwork_jobs] Line 121393: title continues (no link anchor)
+2026-11-22 18:03:55,400 - job_market_analysis - DEBUG - [upwork_jobs] Line 121394: title continues (no link anchor)
+2026-11-22 18:03:55,416 - job_market_analysis - DEBUG - [upwork_jobs] Line 122187: title continues (no link anchor)
+2026-11-22 18:03:55,444 - job_market_analysis - DEBUG - [upwork_jobs] Line 123549: title continues (no link anchor)
+2026-11-22 18:03:55,451 - job_market_analysis - DEBUG - [upwork_jobs] Line 123689: title continues (no link anchor)
+2026-11-22 18:03:55,455 - job_market_analysis - DEBUG - [upwork_jobs] Line 123758: title continues (no link anchor)
+2026-11-22 18:03:55,488 - job_market_analysis - DEBUG - [upwork_jobs] Line 125772: title continues (no link anchor)
+2026-11-22 18:03:55,524 - job_market_analysis - DEBUG - [upwork_jobs] Line 129808: title continues (no link anchor)
+2026-11-22 18:03:55,536 - job_market_analysis - DEBUG - [upwork_jobs] Line 130619: title continues (no link anchor)
+2026-11-22 18:03:55,547 - job_market_analysis - DEBUG - [upwork_jobs] Line 131527: title continues (no link anchor)
+2026-11-22 18:03:55,550 - job_market_analysis - DEBUG - [upwork_jobs] Line 131739: title continues (no link anchor)
+2026-11-22 18:03:55,561 - job_market_analysis - DEBUG - [upwork_jobs] Line 132152: title continues (no link anchor)
+2026-11-22 18:03:55,616 - job_market_analysis - DEBUG - [upwork_jobs] Line 137154: title continues (no link anchor)
+2026-11-22 18:03:55,634 - job_market_analysis - DEBUG - [upwork_jobs] Line 138304: title continues (no link anchor)
+2026-11-22 18:03:55,636 - job_market_analysis - DEBUG - [upwork_jobs] Line 138305: title continues (no link anchor)
+2026-11-22 18:03:55,656 - job_market_analysis - DEBUG - [upwork_jobs] Line 139805: title continues (no link anchor)
+2026-11-22 18:03:55,660 - job_market_analysis - DEBUG - [upwork_jobs] Line 140163: title continues (no link anchor)
+2026-11-22 18:03:55,676 - job_market_analysis - DEBUG - [upwork_jobs] Line 140894: title continues (no link anchor)
+2026-11-22 18:03:55,693 - job_market_analysis - DEBUG - [upwork_jobs] Line 142467: title continues (no link anchor)
+2026-11-22 18:03:55,711 - job_market_analysis - DEBUG - [upwork_jobs] Line 144098: title continues (no link anchor)
+2026-11-22 18:03:55,729 - job_market_analysis - DEBUG - [upwork_jobs] Line 144957: title continues (no link anchor)
+2026-11-22 18:03:55,746 - job_market_analysis - DEBUG - [upwork_jobs] Line 146144: title continues (no link anchor)
+2026-11-22 18:03:55,757 - job_market_analysis - DEBUG - [upwork_jobs] Line 146962: title continues (no link anchor)
+2026-11-22 18:03:55,786 - job_market_analysis - DEBUG - [upwork_jobs] Line 149998: title continues (no link anchor)
+2026-11-22 18:03:55,793 - job_market_analysis - DEBUG - [upwork_jobs] Line 149999: title continues (no link anchor)
+2026-11-22 18:03:55,802 - job_market_analysis - DEBUG - [upwork_jobs] Line 150680: title continues (no link anchor)
+2026-11-22 18:03:55,830 - job_market_analysis - DEBUG - [upwork_jobs] Line 151944: title continues (no link anchor)
+2026-11-22 18:03:55,842 - job_market_analysis - DEBUG - [upwork_jobs] Line 152404: title continues (no link anchor)
+2026-11-22 18:03:55,851 - job_market_analysis - DEBUG - [upwork_jobs] Line 152753: title continues (no link anchor)
+2026-11-22 18:03:55,902 - job_market_analysis - DEBUG - [upwork_jobs] Line 155742: title continues (no link anchor)
+2026-11-22 18:03:55,911 - job_market_analysis - DEBUG - [upwork_jobs] Line 156230: title continues (no link anchor)
+2026-11-22 18:03:55,950 - job_market_analysis - DEBUG - [upwork_jobs] Line 159527: title continues (no link anchor)
+2026-11-22 18:03:55,966 - job_market_analysis - DEBUG - [upwork_jobs] Line 160478: title continues (no link anchor)
+2026-11-22 18:03:55,970 - job_market_analysis - DEBUG - [upwork_jobs] Line 160479: title continues (no link anchor)
+2026-11-22 18:03:55,971 - job_market_analysis - DEBUG - [upwork_jobs] Line 160480: title continues (no link anchor)
+2026-11-22 18:03:55,975 - job_market_analysis - DEBUG - [upwork_jobs] Line 160481: title continues (no link anchor)
+2026-11-22 18:03:56,001 - job_market_analysis - DEBUG - [upwork_jobs] Line 162101: title continues (no link anchor)
+2026-11-22 18:03:56,002 - job_market_analysis - DEBUG - [upwork_jobs] Line 162102: title continues (no link anchor)
+2026-11-22 18:03:56,006 - job_market_analysis - DEBUG - [upwork_jobs] Line 162384: title continues (no link anchor)
+2026-11-22 18:03:56,010 - job_market_analysis - DEBUG - [upwork_jobs] Line 162385: title continues (no link anchor)
+2026-11-22 18:03:56,024 - job_market_analysis - DEBUG - [upwork_jobs] Line 163932: title continues (no link anchor)
+2026-11-22 18:03:56,026 - job_market_analysis - DEBUG - [upwork_jobs] Line 163970: title continues (no link anchor)
+2026-11-22 18:03:56,036 - job_market_analysis - DEBUG - [upwork_jobs] Line 165076: title continues (no link anchor)
+2026-11-22 18:03:56,037 - job_market_analysis - DEBUG - [upwork_jobs] Line 165108: title continues (no link anchor)
+2026-11-22 18:03:56,042 - job_market_analysis - DEBUG - [upwork_jobs] Line 165601: title continues (no link anchor)
+2026-11-22 18:03:56,043 - job_market_analysis - DEBUG - [upwork_jobs] Line 165602: title continues (no link anchor)
+2026-11-22 18:03:56,059 - job_market_analysis - DEBUG - [upwork_jobs] Line 166999: title continues (no link anchor)
+2026-11-22 18:03:56,063 - job_market_analysis - DEBUG - [upwork_jobs] Line 167085: title continues (no link anchor)
+2026-11-22 18:03:56,064 - job_market_analysis - DEBUG - [upwork_jobs] Line 167096: title continues (no link anchor)
+2026-11-22 18:03:56,078 - job_market_analysis - DEBUG - [upwork_jobs] Line 168283: title continues (no link anchor)
+2026-11-22 18:03:56,091 - job_market_analysis - DEBUG - [upwork_jobs] Line 168787: title continues (no link anchor)
+2026-11-22 18:03:56,126 - job_market_analysis - DEBUG - [upwork_jobs] Line 172318: title continues (no link anchor)
+2026-11-22 18:03:56,132 - job_market_analysis - DEBUG - [upwork_jobs] Line 172539: title continues (no link anchor)
+2026-11-22 18:03:56,134 - job_market_analysis - DEBUG - [upwork_jobs] Line 172719: title continues (no link anchor)
+2026-11-22 18:03:56,149 - job_market_analysis - DEBUG - [upwork_jobs] Line 173948: title continues (no link anchor)
+2026-11-22 18:03:56,172 - job_market_analysis - DEBUG - [upwork_jobs] Line 176314: title continues (no link anchor)
+2026-11-22 18:03:56,177 - job_market_analysis - DEBUG - [upwork_jobs] Line 176361: title continues (no link anchor)
+2026-11-22 18:03:56,185 - job_market_analysis - DEBUG - [upwork_jobs] Line 176935: title continues (no link anchor)
+2026-11-22 18:03:56,205 - job_market_analysis - DEBUG - [upwork_jobs] Line 178946: title continues (no link anchor)
+2026-11-22 18:03:56,211 - job_market_analysis - DEBUG - [upwork_jobs] Line 179274: title continues (no link anchor)
+2026-11-22 18:03:56,230 - job_market_analysis - DEBUG - [upwork_jobs] Line 180709: title continues (no link anchor)
+2026-11-22 18:03:56,275 - job_market_analysis - DEBUG - [upwork_jobs] Line 185570: title continues (no link anchor)
+2026-11-22 18:03:56,277 - job_market_analysis - DEBUG - [upwork_jobs] Line 185571: title continues (no link anchor)
+2026-11-22 18:03:56,294 - job_market_analysis - DEBUG - [upwork_jobs] Line 186579: title continues (no link anchor)
+2026-11-22 18:03:56,295 - job_market_analysis - DEBUG - [upwork_jobs] Line 186580: title continues (no link anchor)
+2026-11-22 18:03:56,328 - job_market_analysis - DEBUG - [upwork_jobs] Line 188579: title continues (no link anchor)
+2026-11-22 18:03:56,330 - job_market_analysis - DEBUG - [upwork_jobs] Line 188580: title continues (no link anchor)
+2026-11-22 18:03:56,342 - job_market_analysis - DEBUG - [upwork_jobs] Line 189266: title continues (no link anchor)
+2026-11-22 18:03:56,365 - job_market_analysis - DEBUG - [upwork_jobs] Line 191527: title continues (no link anchor)
+2026-11-22 18:03:56,374 - job_market_analysis - DEBUG - [upwork_jobs] Line 192091: title continues (no link anchor)
+2026-11-22 18:03:56,377 - job_market_analysis - DEBUG - [upwork_jobs] Line 192092: title continues (no link anchor)
+2026-11-22 18:03:56,421 - job_market_analysis - DEBUG - [upwork_jobs] Line 197055: title continues (no link anchor)
+2026-11-22 18:03:56,422 - job_market_analysis - DEBUG - [upwork_jobs] Line 197056: title continues (no link anchor)
+2026-11-22 18:03:56,426 - job_market_analysis - DEBUG - [upwork_jobs] Line 197210: title continues (no link anchor)
+2026-11-22 18:03:56,450 - job_market_analysis - DEBUG - [upwork_jobs] Line 199344: title continues (no link anchor)
+2026-11-22 18:03:56,464 - job_market_analysis - DEBUG - [upwork_jobs] Line 200701: title continues (no link anchor)
+2026-11-22 18:03:56,465 - job_market_analysis - DEBUG - [upwork_jobs] Line 200702: title continues (no link anchor)
+2026-11-22 18:03:56,468 - job_market_analysis - DEBUG - [upwork_jobs] Line 200703: title continues (no link anchor)
+2026-11-22 18:03:56,470 - job_market_analysis - DEBUG - [upwork_jobs] Line 200704: title continues (no link anchor)
+2026-11-22 18:03:56,481 - job_market_analysis - DEBUG - [upwork_jobs] Line 201480: title continues (no link anchor)
+2026-11-22 18:03:56,492 - job_market_analysis - DEBUG - [upwork_jobs] Line 202472: title continues (no link anchor)
+2026-11-22 18:03:56,496 - job_market_analysis - DEBUG - [upwork_jobs] Line 202749: title continues (no link anchor)
+2026-11-22 18:03:56,503 - job_market_analysis - DEBUG - [upwork_jobs] Line 203251: title continues (no link anchor)
+2026-11-22 18:03:56,505 - job_market_analysis - DEBUG - [upwork_jobs] Line 203252: title continues (no link anchor)
+2026-11-22 18:03:56,506 - job_market_analysis - DEBUG - [upwork_jobs] Line 203253: title continues (no link anchor)
+2026-11-22 18:03:56,508 - job_market_analysis - DEBUG - [upwork_jobs] Line 203254: title continues (no link anchor)
+2026-11-22 18:03:56,508 - job_market_analysis - DEBUG - [upwork_jobs] Line 203255: title continues (no link anchor)
+2026-11-22 18:03:56,511 - job_market_analysis - DEBUG - [upwork_jobs] Line 203256: title continues (no link anchor)
+2026-11-22 18:03:56,513 - job_market_analysis - DEBUG - [upwork_jobs] Line 203257: title continues (no link anchor)
+2026-11-22 18:03:56,520 - job_market_analysis - DEBUG - [upwork_jobs] Line 203692: title continues (no link anchor)
+2026-11-22 18:03:56,521 - job_market_analysis - DEBUG - [upwork_jobs] Line 203693: title continues (no link anchor)
+2026-11-22 18:03:56,545 - job_market_analysis - DEBUG - [upwork_jobs] Line 206075: title continues (no link anchor)
+2026-11-22 18:03:56,552 - job_market_analysis - DEBUG - [upwork_jobs] Line 206643: title continues (no link anchor)
+2026-11-22 18:03:56,573 - job_market_analysis - DEBUG - [upwork_jobs] Line 208840: title continues (no link anchor)
+2026-11-22 18:03:56,592 - job_market_analysis - DEBUG - [upwork_jobs] Line 210745: title continues (no link anchor)
+2026-11-22 18:03:56,603 - job_market_analysis - DEBUG - [upwork_jobs] Line 211681: title continues (no link anchor)
+2026-11-22 18:03:56,634 - job_market_analysis - DEBUG - [upwork_jobs] Line 213922: title continues (no link anchor)
+2026-11-22 18:03:56,648 - job_market_analysis - DEBUG - [upwork_jobs] Line 215365: title continues (no link anchor)
+2026-11-22 18:03:56,692 - job_market_analysis - DEBUG - [upwork_jobs] Line 220546: title continues (no link anchor)
+2026-11-22 18:03:56,696 - job_market_analysis - DEBUG - [upwork_jobs] Line 220796: title continues (no link anchor)
+2026-11-22 18:03:56,697 - job_market_analysis - DEBUG - [upwork_jobs] Line 220797: title continues (no link anchor)
+2026-11-22 18:03:56,703 - job_market_analysis - DEBUG - [upwork_jobs] Line 221222: title continues (no link anchor)
+2026-11-22 18:03:56,721 - job_market_analysis - DEBUG - [upwork_jobs] Line 223104: title continues (no link anchor)
+2026-11-22 18:03:56,724 - job_market_analysis - DEBUG - [upwork_jobs] Line 223373: title continues (no link anchor)
+2026-11-22 18:03:56,741 - job_market_analysis - DEBUG - [upwork_jobs] Line 225155: title continues (no link anchor)
+2026-11-22 18:03:56,819 - job_market_analysis - DEBUG - [upwork_jobs] Line 233763: title continues (no link anchor)
+2026-11-22 18:03:56,837 - job_market_analysis - DEBUG - [upwork_jobs] Line 235821: title continues (no link anchor)
+2026-11-22 18:03:56,839 - job_market_analysis - DEBUG - [upwork_jobs] Line 235822: title continues (no link anchor)
+2026-11-22 18:03:56,843 - job_market_analysis - DEBUG - [upwork_jobs] Line 236127: title continues (no link anchor)
+2026-11-22 18:03:56,850 - job_market_analysis - DEBUG - [upwork_jobs] Line 236747: title continues (no link anchor)
+2026-11-22 18:03:56,857 - job_market_analysis - DEBUG - [upwork_jobs] Line 237446: title continues (no link anchor)
+2026-11-22 18:03:56,861 - job_market_analysis - DEBUG - [upwork_jobs] Line 237705: title continues (no link anchor)
+2026-11-22 18:03:56,875 - job_market_analysis - DEBUG - [upwork_jobs] Line 239224: title continues (no link anchor)
+2026-11-22 18:03:56,906 - job_market_analysis - DEBUG - [upwork_jobs] Line 242170: title continues (no link anchor)
+2026-11-22 18:03:56,909 - job_market_analysis - DEBUG - [upwork_jobs] Line 242381: title continues (no link anchor)
+2026-11-22 18:03:56,910 - job_market_analysis - DEBUG - [upwork_jobs] Line 242386: title continues (no link anchor)
+2026-11-22 18:03:56,911 - job_market_analysis - DEBUG - [upwork_jobs] Line 242388: title continues (no link anchor)
+2026-11-22 18:03:56,912 - job_market_analysis - DEBUG - [upwork_jobs] Line 242390: title continues (no link anchor)
+2026-11-22 18:03:56,914 - job_market_analysis - DEBUG - [upwork_jobs] Line 242468: title continues (no link anchor)
+2026-11-22 18:03:56,915 - job_market_analysis - DEBUG - [upwork_jobs] Line 242498: title continues (no link anchor)
+2026-11-22 18:03:56,916 - job_market_analysis - DEBUG - [upwork_jobs] Line 242500: title continues (no link anchor)
+2026-11-22 18:03:56,923 - job_market_analysis - DEBUG - [upwork_jobs] Line 243096: title continues (no link anchor)
+2026-11-22 18:03:56,928 - job_market_analysis - DEBUG - [upwork_jobs] Line 243543: title continues (no link anchor)
+2026-11-22 18:03:56,930 - job_market_analysis - DEBUG - [upwork_jobs] Line 243544: title continues (no link anchor)
+2026-11-22 18:03:56,932 - job_market_analysis - DEBUG - [upwork_jobs] Line 243545: title continues (no link anchor)
+2026-11-22 18:03:56,954 - job_market_analysis - DEBUG - [upwork_jobs] Line 244599: title continues (no link anchor)
+2026-11-22 18:03:58,645 - job_market_analysis - INFO - [upwork_jobs] Parsed 244828 records from 245161 data lines (283 multi-line titles, 0 bad lines, 0 leftover fragments)
+2026-11-22 18:03:58,714 - job_market_analysis - INFO - Raw data loaded — source=github, records=244828, row check=match
+2026-11-22 18:03:58,764 - job_market_analysis - DEBUG - Preview built for first 10 rows
+2026-11-22 18:03:59,075 - job_market_analysis - DEBUG - Missing counts computed: {'title': 0, 'link': 0, 'published_date': 0, 'is_hourly': 0, 'hourly_low': 142406, 'hourly_high': 146053, 'budget': 140937, 'country': 5077}
+2026-11-22 18:03:59,243 - job_market_analysis - INFO - Missing pay fields by contract type computed
+2026-11-22 18:04:00,191 - job_market_analysis - INFO - Date coverage previewed — core window starts 2024-02-12, 99.90% of rows inside it
+2026-11-22 18:04:02,131 - job_market_analysis - INFO - Dates parsed — failures=0, range=2023-11-02 to 2024-03-24
+2026-11-22 18:04:02,349 - job_market_analysis - INFO - worker_type created — unmapped=0
+2026-11-22 18:04:02,810 - job_market_analysis - INFO - [df_refined] Missing-value audit: 4 columns affected
+2026-11-22 18:04:02,926 - job_market_analysis - INFO - Missing value audit built — 4 columns with missing values, country missing 2.07%
+2026-11-22 18:04:04,408 - job_market_analysis - INFO - [df_refined] Duplicate rows found: 0
+2026-11-22 18:04:04,541 - job_market_analysis - INFO - Validity checks — removed=1, non_positive_pay=0, inverted_range=0
+2026-11-22 18:04:04,735 - job_market_analysis - INFO - Country blanks set to Others — rows=5076
+2026-11-22 18:04:05,201 - job_market_analysis - INFO - Missing value treatment applied — flags={'rate_not_disclosed': 38514, 'open_ended_rate': 3647}, swapped=0, filled={'hourly_low': 38514, 'hourly_high': 42161}, raised=295
+2026-11-22 18:04:06,493 - job_market_analysis - INFO - Title repair — entities=10130, replacement=32, changed=10160
+2026-11-22 18:04:06,765 - job_market_analysis - INFO - Cleaned columns applied — df_refined shape=(244827, 11)
+2026-11-22 18:04:07,091 - job_market_analysis - INFO - Final preview shown — shape=(244827, 11), pay values still missing=0
+2026-11-22 18:04:07,992 - job_market_analysis - INFO - Remote keyword discovery — seed postings=1398, distinct seed phrases=2034
+2026-11-22 18:04:10,852 - job_market_analysis - INFO - remote_posting created — flagged=1365, keyword matches=1398
+2026-11-22 18:04:11,121 - job_market_analysis - INFO - pay_status created — {'Stated': 202666, 'Not stated': 38514, 'Open-ended': 3647}
+2026-11-22 18:04:11,223 - job_market_analysis - INFO - hourly_rate_mid created — hourly postings=140936, unexpected=0
+2026-11-22 18:04:13,922 - job_market_analysis - INFO - Date features created — backdated=252, months=5
+2026-11-22 18:04:16,307 - job_market_analysis - INFO - Title features created — repost_candidates=17244
+2026-11-22 18:05:46,175 - job_market_analysis - INFO - job_category created — sources={'Keyword rule': 89.74, 'General / Unspecified': 8.5, 'Model': 1.76}, model agreement=0.981
+2026-11-22 18:05:46,468 - job_market_analysis - INFO - Job category spot check shown
+2026-11-22 18:05:46,507 - job_market_analysis - INFO - Feature engineering preview shown — shape=(244827, 23), added=['remote_posting', 'pay_status', 'hourly_rate_mid', 'posted_date', 'day_of_week', 'posted_month', 'backdated_posting', 'title_clean', 'title_word_count', 'is_repost_candidate', 'job_category', 'category_source']
+2026-11-22 18:05:47,370 - job_market_analysis - INFO - Contract type and pay status plotted — {'Freelancer': 57.57, 'Permanent': 42.43} | {'Stated': 82.78, 'Open-ended': 1.49, 'Not stated': 15.73}
+2026-11-22 18:05:48,134 - job_market_analysis - INFO - Country plotted — named countries=212, others=2.07%, top15 share=78.65%
+2026-11-22 18:05:48,640 - job_market_analysis - INFO - Job category share plotted — categories=15, top=Web & Software Development
+2026-11-22 18:05:51,915 - job_market_analysis - INFO - Title keywords plotted — distinct words=36227, top word=website
+2026-11-22 18:05:53,142 - job_market_analysis - INFO - Remote postings plotted — remote=1365, share=0.0056
+2026-11-22 18:05:54,083 - job_market_analysis - INFO - Daily volume plotted — days=42, first-week mean=4052, later mean=6177
+2026-11-22 18:05:58,878 - job_market_analysis - INFO - Numeric distributions rendered — skew/kurtosis for 3 features
+2026-11-22 18:06:01,333 - job_market_analysis - INFO - Numeric boxplots rendered — outlier severity assessed for all features
+2026-11-22 18:06:01,383 - job_market_analysis - INFO - [df_refined] Outlier summary built for 2 columns (log_scale=True)
+2026-11-22 18:06:01,402 - job_market_analysis - INFO - [df_refined] Outlier summary built for 1 columns (log_scale=False)
+2026-11-22 18:06:01,418 - job_market_analysis - INFO - Outlier detection — [{'Column': 'hourly_rate_mid', 'IQR Outliers': 1543}, {'Column': 'budget', 'IQR Outliers': 609}, {'Column': 'title_word_count', 'IQR Outliers': 5310}]
+2026-11-22 18:06:01,495 - job_market_analysis - INFO - Outlier decision — capped columns=['hourly_rate_mid', 'budget'], kept=title_word_count
+2026-11-22 18:06:01,553 - job_market_analysis - INFO - Outlier treatment applied — capped postings=2171
+2026-11-22 18:06:01,698 - job_market_analysis - INFO - Capping methods compared — fence vs percentile caps vs log
+2026-11-22 18:06:06,001 - job_market_analysis - INFO - Capped pay distributions rendered — extreme values removed from both pay columns
+2026-11-22 18:06:07,005 - job_market_analysis - INFO - Daily volume by contract type plotted — full days=39, mean Freelancer share=57.3%
+2026-11-22 18:06:07,766 - job_market_analysis - INFO - Weekday by contract type plotted — weekend share={'Freelancer': 20.56, 'Permanent': 23.1}
+2026-11-22 18:06:11,914 - job_market_analysis - INFO - Country rate map built — countries shown=91, unmatched=[]
+2026-11-22 18:06:13,039 - job_market_analysis - INFO - Country rate ranking plotted — top=Malaysia, bottom=South Korea
+2026-11-22 18:06:14,245 - job_market_analysis - INFO - Country volume vs rate plotted — countries=91, rank correlation=0.19
+2026-11-22 18:06:16,493 - job_market_analysis - INFO - Pay by job category plotted — highest median: {'Freelancer': 'Legal & Consulting', 'Permanent': 'HR & Recruiting'}
+2026-11-22 18:06:34,219 - job_market_analysis - INFO - Keyword pay tests done — {'Freelancer': {'Words': 379, 'Significant': 303}, 'Permanent': {'Words': 400, 'Significant': 306}}
+2026-11-22 18:06:35,345 - job_market_analysis - INFO - Keyword pay premium and discount plotted
+2026-11-22 18:06:36,329 - job_market_analysis - INFO - Volume and average rate plotted — days=39, rank correlation=0.39
+2026-11-22 18:06:37,393 - job_market_analysis - INFO - Category by contract type plotted — categories=15
+2026-11-22 18:06:39,162 - job_market_analysis - INFO - Spearman heatmap plotted — log pay vs title length, remote, repost and weekday for both contract types
+2026-11-22 18:06:41,058 - job_market_analysis - INFO - Pay model features prepared — [{'Contract': 'Freelancer', 'Postings': '98,775', 'Title Words Kept': 64, 'Features Before Encoding': 68, 'Job Categories': 15, 'Country Groups': 16}, {'Contract': 'Permanent', 'Postings': '103,891', 'Title Words Kept': 63, 'Features Before Encoding': 67, 'Job Categories': 15, 'Country Groups': 16}]
+2026-11-22 18:10:47,466 - job_market_analysis - INFO - Model comparison done — best={'Freelancer': 'LightGBM', 'Permanent': 'LightGBM'}
+2026-11-22 18:10:48,729 - job_market_analysis - INFO - Model comparison chart saved — best models {'Freelancer': 'LightGBM', 'Permanent': 'LightGBM'}
+2026-11-22 18:11:57,990 - job_market_analysis - INFO - Pay driver models fitted and importance plotted — {'Freelancer': 'LightGBM', 'Permanent': 'LightGBM'}
+2026-11-22 18:11:58,225 - job_market_analysis - INFO - Category trends tested — {'Stable': 13, 'Rising': 1, 'Falling': 1}
+2026-11-22 18:12:00,036 - job_market_analysis - INFO - Category share change plotted — movers=['Marketing & Sales', 'Writing & Translation']
+2026-11-22 18:12:00,689 - job_market_analysis - INFO - Remote share trend tested — {'All postings': 'Stable', 'Freelancer': 'Stable', 'Permanent': 'Stable'}
+2026-11-22 18:12:02,003 - job_market_analysis - INFO - Daily remote share plotted for all postings and by contract type
+2026-11-22 18:12:32,717 - job_market_analysis - INFO - Theme count sweep done — best k=20, silhouette=0.194
+2026-11-22 18:13:01,543 - job_market_analysis - INFO - Themes profiled — k=20, stability=0.38
+2026-11-22 18:13:01,707 - job_market_analysis - INFO - Theme trends tested — {'Stable': 15, 'Falling': 3, 'Rising': 2}
+2026-11-22 18:13:02,411 - job_market_analysis - INFO - Market summary built — grain=Week, periods=6
+2026-11-22 18:13:04,204 - job_market_analysis - INFO - Category mix plotted — 15 categories across 6 periods
+2026-11-22 18:13:04,257 - job_market_analysis - INFO - Latest period compared — {'Postings per Day': 'Within earlier range', 'Freelancer Share (%)': 'Within earlier range', 'Remote Share (%)': 'Above earlier range', 'Average Hourly Rate (units)': 'Within earlier range', 'Average Salary (units)': 'Within earlier range'}
+2026-11-22 18:13:06,340 - job_market_analysis - INFO - Dashboard preview saved — 6 periods
+2026-11-22 18:13:06,460 - job_market_analysis - INFO - Demand panel built — 39 days x 14 categories
+2026-11-22 18:13:07,206 - job_market_analysis - INFO - Weekly pattern plotted — busiest Thursday, quietest Sunday
+2026-11-22 18:13:27,378 - job_market_analysis - INFO - Rolling-origin forecasts built — 5 models, 3 folds
+2026-11-22 18:14:13,502 - job_market_analysis - INFO - Forecast comparison with neural tier — best=Holt-Winters
+2026-11-22 18:14:14,336 - job_market_analysis - INFO - Forecast comparison chart saved — best=Holt-Winters
+2026-11-22 18:14:16,835 - job_market_analysis - INFO - High-demand roles forecast — top 5: ['Web & Software Development', 'Marketing & Sales', 'Design & Creative', 'Video & Audio', 'Writing & Translation']
+2026-11-22 18:14:19,588 - job_market_analysis - INFO - Demand forecast plotted for ['Web & Software Development', 'Marketing & Sales', 'Design & Creative', 'Video & Audio', 'Writing & Translation', 'Admin & Virtual Assistance']
+2026-11-22 18:14:20,061 - job_market_analysis - INFO - Remote share forecast comparison done — best=Overall Average
+2026-11-22 18:14:20,744 - job_market_analysis - INFO - Remote share forecast made — method=Overall Average, level=0.55%
+2026-11-22 18:14:20,804 - job_market_analysis - INFO - Demand scenarios built for 14 categories; trending: ['Marketing & Sales', 'Writing & Translation']
+2026-11-22 18:14:21,524 - job_market_analysis - INFO - Scenario ranges plotted for demand
+2026-11-22 18:14:21,557 - job_market_analysis - INFO - Scenario summary built — 4 scenarios
+2026-11-22 18:14:22,203 - job_market_analysis - INFO - Recommendation index built — 78,473 listings from 85,635 postings
+2026-11-22 18:15:01,619 - job_market_analysis - INFO - Retrievers compared — best by MRR: Word + Character
+2026-11-22 18:15:01,642 - job_market_analysis - INFO - Recommendation function ready — retriever=Word + Character, listings=78,473
+2026-11-22 18:15:01,806 - job_market_analysis - INFO - Example recommendations shown — country=United States, results=10
+2026-11-22 18:16:23,296 - job_market_analysis - INFO - Dashboard bundle assembled — 18 tables, data through 2024-03-23
+2026-11-22 18:18:17,645 - job_market_analysis - INFO - [recommender] Local folder not available: Assets/models
+2026-11-22 18:18:17,649 - job_market_analysis - INFO - [recommender] Drive folder not available: /content/drive/MyDrive/NHIS_Project/Project 8/Assets/models
+2026-11-22 18:18:17,865 - job_market_analysis - WARNING - GitHub artifact discovery failed: HTTP Error 404: Not Found
+2026-11-22 18:18:17,875 - job_market_analysis - INFO - No existing artifact found for recommender across Local, Drive, or GitHub.
+2026-11-22 18:18:20,609 - job_market_analysis - INFO - Saved model artifact locally: Assets/models/recommender_20261122_181817.pkl
+2026-11-22 18:18:20,612 - job_market_analysis - WARNING - Drive backup skipped: parent folder not found (/content/drive/MyDrive/NHIS_Project/Project 8/Assets). Drive is not mounted or the project folder does not exist.
+2026-11-22 18:18:20,616 - job_market_analysis - INFO - [dashboard_tables] Local folder reachable but holds no 'dashboard_tables_*.pkl'
+2026-11-22 18:18:20,621 - job_market_analysis - INFO - [dashboard_tables] Drive folder not available: /content/drive/MyDrive/NHIS_Project/Project 8/Assets/models
+2026-11-22 18:18:20,693 - job_market_analysis - WARNING - GitHub artifact discovery failed: HTTP Error 404: Not Found
+2026-11-22 18:18:20,695 - job_market_analysis - INFO - No existing artifact found for dashboard_tables across Local, Drive, or GitHub.
+2026-11-22 18:18:20,754 - job_market_analysis - INFO - Saved model artifact locally: Assets/models/dashboard_tables_20261122_181820.pkl
+2026-11-22 18:18:20,756 - job_market_analysis - WARNING - Drive backup skipped: parent folder not found (/content/drive/MyDrive/NHIS_Project/Project 8/Assets). Drive is not mounted or the project folder does not exist.
+2026-11-22 18:18:20,789 - job_market_analysis - INFO - Saved outputs ready — {'recommender_20261122_181817.pkl': 'Saved', 'dashboard_tables_20261122_181820.pkl': 'Saved'}
